@@ -1,32 +1,23 @@
-# 예시 스킬 모음
+# Examples — 가상 인터뷰 결과
 
-이 폴더는 [`GUIDE.md`](../GUIDE.md)를 따라 만든 인터뷰 스킬의 **참고용 예시**입니다. 본인 스킬을 설계하기 전에 한 번 훑어보세요. "아, 이런 식으로 풀 수 있구나"의 감을 잡는 게 목적입니다.
+이 폴더는 OS Interview Skill을 한 바퀴 돌렸을 때 손에 남는 결과물의 **참고용 예시**입니다.
 
-> ⚠️ **주의**: 이건 영감용 예시일 뿐, 정답이 아닙니다. 본인 업무 맥락은 다르게 생겼어요. **그대로 베끼지 말고**, 구조만 참고해서 본인 답으로 다시 채우세요.
+> ⚠️ **주의**: 이건 가상의 페르소나로 만든 영감용 예시입니다. **본인 인터뷰 결과는 다르게 생기는 게 정상**이에요. 답이 천차만별인 게 이 키트의 가치 — 같은 답이 나오면 그건 인터뷰가 아니라 설문조사입니다.
 
 ---
 
-## 현재 들어있는 예시
+## 들어있는 예시
 
-| 폴더 | 누구를 위한가 | 무엇을 만들어내는가 |
+| 폴더 | 페르소나 | 첫 부품 형태 |
 |---|---|---|
-| [`client-brief-marketer/`](./client-brief-marketer/) | 마케터 — 신규 클라이언트 미팅 직전/직후 | 1페이지 클라이언트 브리프 |
+| [`content-creator-weekly-review/`](./content-creator-weekly-review/) | 1인 유튜브 채널 운영자 — 매주 콘텐츠 발행이 밀림 | **A. Claude 스킬** (`SKILL.md`) |
+
+각 폴더 안에:
+- `os-blueprint.md` — Phase 1 결과물 (OS 청사진)
+- `<부품-이름>.skill.md` — Phase 3 결과물 (첫 부품)
 
 ---
 
-## 본인 예시를 추가하고 싶다면
+## 더 많은 예시
 
-본인의 v0.1을 만든 다음, 이 폴더에 `<본인-스킬-이름>/SKILL.md`로 PR을 보내주세요. 다른 크루의 첫 영감이 될 거예요.
-
-```bash
-# fork 뜨고 PR 흐름
-gh repo fork <이 repo URL>
-cd sponge-interview-skill-kit
-mkdir -p examples/<your-skill-name>
-cp ~/Documents/my-interview-skill/SKILL.md examples/<your-skill-name>/
-git checkout -b add-<your-skill-name>
-git add examples/<your-skill-name>
-git commit -m "add example: <your skill name>"
-git push origin add-<your-skill-name>
-gh pr create
-```
+본인의 v0.1 결과물이 나오면 PR로 추가해주세요. 다른 사람이 처음 이 키트를 쓸 때의 첫 영감이 됩니다.
